@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta SEO untuk GitHub Pages -->
+    <meta name="description" content="Portofolio Nadin Rahmawati - Lulusan Akuntansi dari SMK Al Irsyad Al Islamiyyah Haurgeulis">
+    <meta name="author" content="Nadin Rahmawati">
+    <title>Nadin Rahmawati | Portofolio</title>
+    
+    <!-- Framework & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --soft-pink: #fce4ec;
+            --sage-green: #91a08d;
+            --deep-teal: #2d4a41;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fdfaf6;
+            color: #334139;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+        /* Dekorasi Background */
+        .floral-pattern {
+            background-image: url('https://www.transparenttextures.com/patterns/floral-paper.png');
+            background-attachment: fixed;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* Animasi Kelopak Bunga */
+        .petal {
+            position: fixed;
+            top: -10%;
+            z-index: 99;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg) translateX(0); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg) translateX(50px); opacity: 0; }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: var(--sage-green); border-radius: 10px; }
+    </style>
+</head>
+<body class="floral-pattern">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-[100] px-4 py-6">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass-effect rounded-full px-8 py-4 shadow-sm">
+            <div class="text-2xl font-bold tracking-tighter text-teal-900">NR<span class="text-pink-400">.</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#home" class="hover:text-pink-500 transition-colors">Beranda</a>
+                <a href="#about" class="hover:text-pink-500 transition-colors">Profil</a>
+                <a href="#education" class="hover:text-pink-500 transition-colors">Pendidikan</a>
+                <a href="#contact" class="hover:text-pink-500 transition-colors">Kontak</a>
+            </div>
+            <div class="md:hidden text-pink-500">🌸</div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero -->
+    <header id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <!-- Dekorasi SVG Bunga Ringan -->
+            <svg class="absolute top-20 left-10 w-64 h-64 text-pink-200" fill="currentColor" viewBox="0 0 100 100"><path d="M50 0 C60 20 80 20 100 50 C80 80 60 80 50 100 C40 80 20 80 0 50 C20 20 40 20 50 0"/></svg>
+        </div>
+
+        <div class="z-10 text-center px-4">
+            <div class="inline-block mb-6 p-1.5 rounded-full bg-gradient-to-tr from-pink-200 to-teal-100 shadow-xl">
+                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-white">
+                    <!-- Siluet Aesthetic atau Foto Nadin -->
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Nadin&backgroundColor=ffdfbf" alt="Profil Nadin" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold text-teal-900 mb-4">Nadin Rahmawati</h1>
+            <p class="text-xl md:text-2xl text-teal-700 italic font-light mb-10 tracking-wide">Lulusan Akuntansi & Pencinta Ketenangan</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#about" class="px-10 py-4 bg-teal-800 text-white rounded-full hover:bg-teal-700 transform hover:-translate-y-1 transition shadow-lg">Lihat Profil</a>
+                <a href="#contact" class="px-10 py-4 border-2 border-teal-800 text-teal-800 rounded-full hover:bg-teal-50 transform hover:-translate-y-1 transition font-bold">Hubungi Saya</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: Tentang (Baleraja, Gantar) -->
+    <section id="about" class="py-24 px-6 bg-teal-50/50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                    <div class="glass-effect p-8 rounded-3xl shadow-2xl relative z-10 border-r-8 border-pink-200">
+                        <h2 class="text-3xl font-bold text-teal-900 mb-6">Tentang Saya</h2>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Saya adalah seorang lulusan Akuntansi yang berdomisili di <strong>Baleraja, Gantar</strong>. Saya memiliki ketertarikan mendalam dalam pengelolaan data keuangan yang presisi dan rapi.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Bagi saya, akuntansi bukan sekadar angka, melainkan seni dalam menciptakan keseimbangan—sama seperti keindahan alam yang selalu saya kagumi.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-pink-100 p-3 rounded-2xl text-pink-600">📍</div>
+                            <div>
+                                <h4 class="font-bold text-teal-900">Alamat</h4>
+                                <p class="text-gray-600">Baleraja, Gantar, Indramayu</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-100 p-3 rounded-2xl text-teal-600">🎓</div>
+                            <div>
+                                <h4 class="font-bold text-teal-900">Fokus Bidang</h4>
+                                <p class="text-gray-600">Akuntansi & Keuangan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-yellow-100 p-3 rounded-2xl text-yellow-600">✨</div>
+                            <div>
+                                <h4 class="font-bold text-teal-900">Filosofi Kerja</h4>
+                                <p class="text-gray-600">Teliti, Jujur, dan Konsisten</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Pendidikan -->
+    <section id="education" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-teal-900 mb-2">Riwayat Pendidikan</h2>
+                <div class="h-1 w-24 bg-pink-300 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="relative border-l-2 border-teal-100 ml-4 md:ml-0 space-y-12">
+                <!-- SD -->
+                <div class="relative pl-10">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-pink-300 border-4 border-white shadow"></div>
+                    <span class="text-xs font-bold text-pink-400 uppercase tracking-widest">Dasar</span>
+                    <h3 class="text-2xl font-bold text-teal-800 mt-1">SDN CADASNGAMPAR</h3>
+                    <p class="text-gray-500 italic mt-1 font-medium">Lulus dengan dasar karakter yang kuat.</p>
+                </div>
+
+                <!-- SMP -->
+                <div class="relative pl-10">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-teal-300 border-4 border-white shadow"></div>
+                    <span class="text-xs font-bold text-teal-400 uppercase tracking-widest">Menengah Pertama</span>
+                    <h3 class="text-2xl font-bold text-teal-800 mt-1">SMPN 3 GANTAR</h3>
+                    <p class="text-gray-500 italic mt-1 font-medium">Mulai mengeksplorasi potensi diri.</p>
+                </div>
+
+                <!-- SMK -->
+                <div class="relative pl-10">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-pink-400 border-4 border-white shadow"></div>
+                    <span class="text-xs font-bold text-pink-500 uppercase tracking-widest">Menengah Kejuruan</span>
+                    <h3 class="text-2xl font-bold text-teal-800 mt-1">SMK AL IRSYAD AL ISLAMIYYAH HAURGEULIS</h3>
+                    <div class="mt-2 inline-block px-4 py-1 bg-pink-50 text-pink-600 rounded-full text-sm font-bold border border-pink-100">
+                        Jurusan Akuntansi
+                    </div>
+                    <p class="text-gray-500 italic mt-3 font-medium text-sm leading-relaxed">
+                        Mengembangkan keahlian dalam pembukuan, laporan keuangan, dan siklus akuntansi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Kontak -->
+    <footer id="contact" class="bg-teal-950 text-white pt-24 pb-12 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">Mari Terkoneksi</h2>
+            <p class="text-teal-200 mb-12 max-w-xl mx-auto opacity-80">
+                Saya selalu terbuka untuk diskusi mengenai peluang kerja, kolaborasi, atau sekadar berbagi inspirasi tentang dunia akuntansi.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-16">
+                <a href="#" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-teal-900 hover:bg-pink-600 transition shadow-lg text-xl">IG</a>
+                <a href="#" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-teal-900 hover:bg-green-600 transition shadow-lg text-xl">WA</a>
+                <a href="#" class="w-14 h-14 flex items-center justify-center rounded-2xl bg-teal-900 hover:bg-blue-600 transition shadow-lg text-xl">FB</a>
+            </div>
+
+            <div class="border-t border-teal-900 pt-12 text-teal-400 text-sm">
+                <p class="mb-2 uppercase tracking-[0.2em]">Nadin Rahmawati</p>
+                <p>Baleraja, Gantar, Indramayu</p>
+                <p class="mt-8 opacity-40">© 2024 Design with 🌸 and Heart.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Petal Script -->
+    <script>
+        const petalIcons = ['🌸', '🍃', '💮', '✨'];
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            petal.innerHTML = petalIcons[Math.floor(Math.random() * petalIcons.length)];
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 3 + 4 + 's';
+            petal.style.fontSize = Math.random() * 10 + 15 + 'px';
+            petal.style.filter = `blur(${Math.random() * 1}px)`;
+            document.body.appendChild(petal);
+            setTimeout(() => petal.remove(), 7000);
+        }
+        setInterval(createPetal, 600);
+    </script>
+</body>
+  </html>
